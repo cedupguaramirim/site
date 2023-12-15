@@ -8,7 +8,38 @@
     --cor-branco: #ffffff;
     --cor-preto: #000000;
 }
+.img-quadrado {
+    width: 160px;
+    height: 160px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 1.5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position:relative;
+}
 
+ .imagem {
+    text-align: center;
+    font-family: fonte_geral;
+    color: var(--cor-Imperatriz);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.img-turma:hover {
+    background-position: 100% 100%;
+}
+.imagem span {
+    margin-top: 10px;
+}
+
+.imagem p{
+    margin:0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -587,17 +618,11 @@ input[type=submit] {
 
 .quem-somos {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     flex-wrap: wrap;
     padding: 30px;
 }
 
-.imagem {
-    text-align: center;
-    font-family: fonte_geral;
-    color: var(--cor-Imperatriz);
-    padding: 12px;
-}
 
 .celula-maior {
     width: 20px;
