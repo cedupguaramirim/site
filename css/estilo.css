@@ -15,6 +15,21 @@
     letter-spacing: 1px;
 
 }
+body {
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para telas maiores que 1200 pixels */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
 
 @font-face {
     font-family: fonte_rodapé;
