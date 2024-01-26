@@ -1,25 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: var(--cor-Hawkes-Azul);
     color: var(--cor-Imperatriz);
-    
+  
 }
-
 .content{
     margin: 10%;
     margin-top: 10% ;
     display: flex;
     align-items:normal;
     justify-content: space-between;
-    
-    
+   
 }
 .content__strong{
     font-size: 21px;
@@ -38,8 +36,32 @@ body {
     font-size: 36px;
     font-family: 'Palanquin Dark', sans-serif;
     line-height: 35px;
-
 }
+footer{
+    padding: 1%;
+    background-image: url(../imagens/rodapé.png);
+    list-style: none;
+    color: var(--cor-branco);
+    font-size: 15px;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.rodape{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rodape__texto {
+    padding: 6%;
+    font-size: 20px;
+}
+
 
 /* toogle - mostra/some */
 
@@ -55,6 +77,9 @@ label {
     background-color:#b8e1f8c8;
     width: 90%;
     margin-bottom: 1%;
+  }
+  label:hover{
+    background-color: #98d4f3;
   }
  /* menu mostra e some */
  #mostra {
@@ -247,10 +272,6 @@ label {
     }
 }
 
-@font-face {
-    font-family: fonte_rodapé;
-    src: url(KGPrimaryPenmanshipAlt.ttf);
-}
 
 @font-face {
     font-family: fonte_detalhes;
@@ -259,7 +280,6 @@ label {
 
 
 
-/*body */
 
 
 
@@ -384,37 +404,7 @@ ul.menu {
 }
 
 
-/*rodapé */
 
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-
-}
-
-
-.item {
-    color: var(--cor-branco);
-    font-size: 15px;
-    font-family: fonte_rodapé;
-    text-align: center;
-    padding: 10px;
-}
-
-.item p {
-    font-size: 20px;
-}
-
-.icone {
-    padding: 5px;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
 
 .barra-imagem {
     width: 100%;
