@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+
+:root {
+    --cor-barramenu: #171f32;
+    --cor-submenuhover: #47ace0;
+    --cor-submenun2: #3b91bd;
+    --cor-submenu: #4476bb;
+    --cor-backgroundbody: #c9edff;
+    --cor-fonte: #7c7a7b;
+    --cor-fontefooter: #ffffff;
+    --cor-label: #b8e1f8c8;
+    --cor-labelhover: #98d4f3;
+
+    --fonte-primaria: 'Roboto', sans-serif;
+    --fonte-secundaria: 'Palanquin Dark', sans-serif;
+    --fonte-terciaria:'Kalam', cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +24,8 @@
 body {
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color: var(--cor-Hawkes-Azul);
-    color: var(--cor-Imperatriz);
+    background-color: var(--cor-backgroundbody);
+    color: var(--cor-fonte);
   
 }
 
@@ -22,12 +39,12 @@ body {
 }
 .content__strong{
     font-size: 21px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: bold;
 }
 .content__p{
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fonte-primaria);
     line-height: 20px;
     margin-left: 2%;
     margin-top: 1%;
@@ -35,16 +52,16 @@ body {
 
 .content__title{
     font-size: 36px;
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: var(--fonte-secundaria);
     line-height: 35px;
 }
 footer{
     padding: 1%;
     background-image: url(../imagens/rodapé.png);
     list-style: none;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     font-size: 12px;
-    font-family: 'Kalam', cursive;
+    font-family: var(--fonte-terciaria);
     text-align: center;
     line-height: 20px;
 }
@@ -73,12 +90,12 @@ label {
     border-style: solid;
     border-radius: 20px;
     border: 30px solid transparent;
-    background-color:#b8e1f8c8;
+    background-color:var(--cor-label);
     width: 90%;
     margin-bottom: 1%;
   }
   label:hover{
-    background-color: #98d4f3;
+    background-color:var(--cor-labelhover);
   }
  /* menu mostra e some */
  #mostra {
@@ -189,20 +206,11 @@ label {
     display:block;
  }
 
-:root {
-    --cor-Miragem: #171f32;
-    --cor-Picton-Azul: #47ace0;
-    --cor-Boston-Azul: #3b91bd;
-    --cor-Aço-Azul: #4476bb;
-    --cor-Hawkes-Azul: #c9edff;
-    --cor-Imperatriz: #7c7a7b;
-    --cor-branco: #ffffff;
-    --cor-preto: #000000;
-}
+
 .img-quadrado {
     width: 160px;
     height: 160px;
-    background-color: #FFFFFF;
+    background-color:var(--cor-fontefooter);
     background-size: cover;
     background-position: 0% 100%;
     transition: 1.5s;
@@ -214,7 +222,7 @@ label {
  .imagem {
     text-align: center;
     font-family: fonte_geral;
-    color: var(--cor-Imperatriz);
+    color: var(--cor-fonte);
     padding: 8px;
     display: flex;
     flex-direction: column;
@@ -297,14 +305,14 @@ label {
 ul.menu ul {
     position: absolute;
     display: none;
-    box-shadow: 3px 3px 2px var(--cor-Miragem);
+    box-shadow: 3px 3px 2px var(--cor-barramenu);
     z-index: 99;
 }
 
 /* Configurações nivel 1*/
 ul.menu {
     float: left;
-    font-family: 'Roboto', sans-serif;
+    font-family:var(--fonte-primaria);
     font-size: 16px;
     padding: 0 5px;
 }
@@ -360,42 +368,42 @@ ul.menu {
 
 /*nivel 1*/
 .menu {
-    background: var(--cor-Miragem);
+    background: var(--cor-barramenu);
 }
 
 .menu a {
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
 }
 
 .menu li:hover>a {
-    background: var(--cor-Aço-Azul);
-    color: var(--cor-branco);
+    background: var(--cor-submenu);
+    color: var(--cor-fontefooter);
 }
 
 /*nivel 2*/
 .submenu-1 {
-    background: var(--cor-Aço-Azul);
+    background: var(--cor-submenu);
 }
 
 .submenu-1 a {
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
 }
 
 .submenu-1 li:hover>a {
-    background: var(--cor-Picton-Azul);
+    background: var(--cor-submenuhover);
 }
 
 /*nivel 3*/
 .submenu-2 {
-    background: var(--cor-Picton-Azul);
+    background: var(--cor-submenuhover);
 }
 
 .submenu-2 a {
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
 }
 
 .submenu-2 li:hover>a {
-    background: var(--cor-Boston-Azul)
+    background: var(--cor-submenun2)
 }
 
 /*slider*/
@@ -422,7 +430,7 @@ ul.menu {
     width: 100%;
     height: auto;
     overflow: hidden;
-    background-color: var(--cor-Hawkes-Azul);
+    background-color: var(--cor-backgroundbody);
 
 }
 
@@ -454,7 +462,7 @@ ul.menu {
 }
 
 .manual-btn {
-    border: 1px solid var(--cor-Aço-Azul);
+    border: 1px solid var(--cor-submenu);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -466,7 +474,7 @@ ul.menu {
 }
 
 .manual-btn:hover {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio1:checked~.first {
@@ -498,7 +506,7 @@ ul.menu {
 }
 
 .auto-navegacao div {
-    border: 1px solid var(--cor-Aço-Azul);
+    border: 1px solid var(--cor-submenu);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -518,31 +526,31 @@ ul.menu {
 }
 
 #radio1:checked~.auto-navegacao .auto-btn1 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio2:checked~.auto-navegacao .auto-btn2 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio3:checked~.auto-navegacao .auto-btn3 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio4:checked~.auto-navegacao .auto-btn4 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio5:checked~.auto-navegacao .auto-btn5 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio6:checked~.auto-navegacao .auto-btn6 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 #radio7:checked~.auto-navegacao .auto-btn7 {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
 }
 
 .divisões {
@@ -566,14 +574,14 @@ ul.menu {
     width: 350px;
     align-items: center;
     text-align: center;
-    color: var(--cor-Aço-Azul);
+    color: var(--cor-submenu);
 }
 
 .quadro p {
     margin-bottom: 20px;
     font-family: fonte_geral;
     font-size: 13px;
-    color: var(--cor-Aço-Azul);
+    color: var(--cor-submenu);
 }
 
 .quadro h2 {
@@ -589,7 +597,7 @@ ul.menu {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    border: 1px solid var(--cor-Aço-Azul);
+    border: 1px solid var(--cor-submenu);
 
 }
 
@@ -607,8 +615,8 @@ ul.menu {
     height: 200px;
     width: 250px;
     text-align: center;
-    color: var(--cor-branco);
-    background-color: var(--cor-Picton-Azul);
+    color: var(--cor-fontefooter);
+    background-color: var(--cor-submenuhover);
     font-family: fonte_detalhes;
     border-radius: 5px;
 }
@@ -628,12 +636,12 @@ ul.menu {
     height: 250px;
     width: 350px;
     text-align: center;
-    color: var(--cor-Aço-Azul);
+    color: var(--cor-submenu);
     font-family: fonte_detalhes;
 }
 
 .item-contato {
-    color: var(--cor-Imperatriz);
+    color: var(--cor-fonte);
     font-family: fonte_geral;
     font-size: 12px;
 }
@@ -660,7 +668,7 @@ textarea {
     height: 30px;
     line-height: 30px;
     border-radius: 10px;
-    border: 1px solid var(--cor-Aço-Azul);
+    border: 1px solid var(--cor-submenu);
     outline: none;
 }
 
@@ -674,7 +682,7 @@ textarea {
 
 input[type=submit] {
     display: block;
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
     height: 35px;
     border: none;
     outline: 0;
@@ -683,7 +691,7 @@ input[type=submit] {
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     font-family: fonte_detalhes;
     font-size: 20px;
 }
@@ -694,7 +702,7 @@ input[type=submit] {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: var(--cor-Aço-Azul);
+    color: var(--cor-submenu);
 }
 
 .divisões-galeria {
@@ -716,18 +724,18 @@ input[type=submit] {
     font-size: 12px;
     text-align: center;
     font-family: fonte_geral;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     width: 20%;
     height: 80px;
     padding: 5px;
-    background-color: var(--cor-Boston-Azul);
+    background-color: var(--cor-submenu);
 }
 
 .tabela th {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
     text-align: center;
     padding: 20px;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     font-family: fonte_detalhes;
     width: 20%;
     font-size: 20px;
@@ -737,7 +745,7 @@ input[type=submit] {
 .linha {
     margin: 10px 0;
     height: 2px;
-    background: var(--cor-Aço-Azul);
+    background: var(--cor-submenu);
     background: webkit-gradient(linear, 0 0, 100% 0, from(white), to(#4476bb), color-stop(50%, #4476bb));
     margin-top: 50px;
     margin-bottom: 50px;
@@ -760,27 +768,27 @@ input[type=submit] {
     font-size: 12px;
     text-align: center;
     font-family: fonte_geral;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     height: 60px;
     padding: 5px;
-    background-color: var(--cor-Boston-Azul);
+    background-color: var(--cor-submenun2);
 }
 
 .tabela-horarios td {
     font-size: 10px;
     text-align: center;
     font-family: fonte_geral;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     height: 50px;
     padding: 5px;
-    background-color: var(--cor-Boston-Azul);
+    background-color: var(--cor-submenun2);
 }
 
 .tabela-horarios th {
-    background-color: var(--cor-Aço-Azul);
+    background-color: var(--cor-submenu);
     text-align: center;
     padding: 10px;
-    color: var(--cor-branco);
+    color: var(--cor-fontefooter);
     font-family: fonte_detalhes;
     width: 5%;
     font-size: 20px;
@@ -796,7 +804,7 @@ td:nth-child(1) {
     height: 250px;
     width: 400px;
     text-align: center;
-    color: var(--cor-Aço-Azul);
+    color: var(--cor-submenu);
     font-family: fonte_detalhes;
     margin-left: 45px;
 }
@@ -815,7 +823,7 @@ td:nth-child(1) {
     width: 350px;
     align-items: center;
     text-align: left;
-    color: var(--cor-Miragem);
+    color: var(--cor-barramenu);
 }
 
 .resumos {
@@ -826,7 +834,7 @@ td:nth-child(1) {
     text-overflow: ellipsis;
     text-align: justify;
     font-family: fonte_geral;
-    color: var(--cor-Imperatriz);
+    color: var(--cor-fonte);
 }
 
 
@@ -845,7 +853,7 @@ td:nth-child(1) {
 
 .p {
     font-family: fonte_geral;
-    color: var(--cor-Imperatriz);
+    color: var(--cor-fonte);
     text-align: justify;
     text-overflow: ellipsis;
     font-size: 12px;
@@ -855,12 +863,12 @@ td:nth-child(1) {
 .agenda {
     padding: 30px;
     height: 400px;
-    background-color: var(--cor-branco);
+    background-color: var(--cor-fontefooter);
     border-radius: 10px;
     list-style: none;
     overflow: auto;
     flex-direction: column;
-    box-shadow: 10px 10px 20px var(--cor-Aço-Azul);
+    box-shadow: 10px 10px 20px var(--cor-submenu);
 
 }
 
@@ -869,8 +877,8 @@ td:nth-child(1) {
 .borda {
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-Aço-Azul);
-    color: var(--cor-branco);
+    background-color: var(--cor-submenu);
+    color: var(--cor-fontefooter);
     width: 45px;
     height: 50px;
     border-radius: 5px;
@@ -895,17 +903,17 @@ html ::-webkit-scrollbar {
 
 html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: var(--cor-Aço-Azul);
+    background: var(--cor-submenu);
 }
 
 html ::-webkit-scrollbar-track {
-    background: var(--cor-branco);
+    background: var(--cor-fontefooter);
 }
 
 .linha-agenda {
     margin: 2px;
     height: 2px;
-    background: var(--cor-Aço-Azul);
+    background: var(--cor-submenu);
     background: webkit-gradient(linear, 0 0, 100% 0, from(white), to(#4476bb), color-stop(50%, #4476bb));
 }
 
@@ -953,7 +961,7 @@ h4 {
     display: inline;
     font-size: 18px;
     font-family: fonte_detalhes;
-    color: var(--cor-Miragem);
+    color: var(--cor-barramenu);
 }
 
 .clicavel-destaque {
@@ -974,7 +982,7 @@ h4 {
     height: 400px;
     width: 350px;
     align-items: flex-end;
-    color: var(--cor-Miragem);
+    color: var(--cor-barramenu);
 }
 .detaque.link{
 padding: 20px;}
@@ -982,7 +990,7 @@ padding: 20px;}
 .linha-destaque {
     margin: 2px;
     height: 2px;
-    background: var(--cor-Aço-Azul);
+    background: var(--cor-submenu);
 }
 a{
     text-decoration: none;
