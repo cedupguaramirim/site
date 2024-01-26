@@ -11,6 +11,7 @@ body {
     color: var(--cor-Imperatriz);
   
 }
+
 .content{
     margin: 10%;
     margin-top: 10% ;
@@ -271,10 +272,7 @@ label {
 }
 
 
-@font-face {
-    font-family: fonte_detalhes;
-    src: url(Nesans\ Semi\ Bold.ttf);
-}
+
 
 
 
@@ -282,20 +280,20 @@ label {
 
 
 /*Configurações Padrões*/
-ul.menu,
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
 .menu li,
 .menu a {
-    margin: 0;
-    padding: 0;
     list-style: none;
     text-decoration: none;
 }
-
-.menu {
-    margin: 0;
-    width: 100%;
-}
-
 ul.menu ul {
     position: absolute;
     display: none;
@@ -306,8 +304,8 @@ ul.menu ul {
 /* Configurações nivel 1*/
 ul.menu {
     float: left;
-    font-family: fonte_detalhes;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     padding: 0 5px;
 }
 
@@ -358,7 +356,6 @@ ul.menu {
     border-radius: 5px;
 }
 
-
 /*Configurações de cores*/
 
 /*nivel 1*/
@@ -401,7 +398,7 @@ ul.menu {
     background: var(--cor-Boston-Azul)
 }
 
-
+/*slider*/
 
 
 .barra-imagem {
