@@ -1,3 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-Hawkes-Azul);
+    color: var(--cor-Imperatriz);
+    
+}
+
+.content{
+    margin: 10%;
+    margin-top: 10% ;
+    display: flex;
+    align-items:normal;
+    justify-content: space-between;
+    
+    
+}
+.content__strong{
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.content__p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.content__title{
+    font-size: 36px;
+    font-family: 'Palanquin Dark', sans-serif;
+    line-height: 35px;
+
+}
+
+/* toogle - mostra/some */
+
+label { 
+    -webkit-appearance: push-button;
+    -moz-appearance: button; 
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    border: 30px solid transparent;
+    background-color:#b8e1f8c8;
+    width: 90%;
+    margin-bottom: 1%;
+  }
+ /* menu mostra e some */
+ #mostra {
+    display:none;
+ }
+#toggle-1 {
+    display:none;
+ }
+ #toggle-2 {
+    display:none;
+ }
+ #toggle-3 {
+    display:none;
+ }
+ #toggle-4 {
+    display:none;
+ }
+ #toggle-5 {
+    display:none;
+ }
+ #toggle-6 {
+    display:none;
+ }
+ #toggle-7 {
+    display:none;
+ }
+ #toggle-8 {
+    display:none;
+ }
+ #toggle-9 {
+    display:none;
+ }
+ #toggle-10 {
+    display:none;
+ }
+ #toggle-11 {
+    display:none;
+ }
+ #toggle-12 {
+    display:none;
+ }
+ #toggle-13 {
+    display:none;
+ }
+ #toggle-14 {
+    display:none;
+ }
+ #toggle-15 {
+    display:none;
+ }
+ #toggle-16 {
+    display:none;
+ }
+ #toggle-17 {
+    display:none;
+ }
+ 
+ /* CSS quando o checkbox está marcado */
+ #toggle-1:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-2:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-3:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-4:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-5:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-6:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-7:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-8:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-9:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-10:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-11:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-12:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-13:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-14:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-15:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-16:checked ~ #mostra {
+    display:block;
+ }
+ #toggle-17:checked ~ #mostra {
+    display:block;
+ }
+
 :root {
     --cor-Miragem: #171f32;
     --cor-Picton-Azul: #47ace0;
@@ -46,9 +213,7 @@
     letter-spacing: 1px;
 
 }
-body {
-    font-size: 16px;
-}
+
 @media screen and (max-width: 768px) {
 
     .site-content{
@@ -92,27 +257,9 @@ body {
     src: url(Nesans\ Semi\ Bold.ttf);
 }
 
-@font-face {
-    font-family: fonte_geral;
-    src: url(Merriweather-Regular.ttf);
-}
+
 
 /*body */
-
-.site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-
-.site-content {
-    margin: 0;
-    flex-grow: 1;
-    background-color: var(--cor-Hawkes-Azul);
-    display: block;
-        background-image: none;
-    }
 
 
 
@@ -450,14 +597,6 @@ ul.menu {
     margin-bottom: 10px;
 }
 
-.títulos {
-    text-align: center;
-    font-family: fonte_detalhes;
-    font-size: 25px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    color: var(--cor-Aço-Azul);
-}
 
 
 .map-responsive {
@@ -494,30 +633,11 @@ ul.menu {
     height: 180px;
 }
 
-.textos {
-    font-family: fonte_geral;
-    color: var(--cor-Imperatriz);
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 12px;
-    margin-left: 100px;
-    margin-right: 100px;
-    line-height: 25px;
-}
 
-.itens-estrutura {
-    margin-top: 50px;
-}
 
-.textos-missao {
-    font-family: fonte_geral;
-    color: var(--cor-Imperatriz);
-    text-align: justify;
-    font-size: 12px;
-    margin-left: 100px;
-    margin-right: 100px;
-    line-height: 25px;
-}
+
+
+
 
 .quadro-contato {
     height: 250px;
