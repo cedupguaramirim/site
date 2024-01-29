@@ -20,13 +20,167 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
-    /* height: 100vh; */
-    box-sizing: border-box;
+    /*height: 100vh; */
     background-color: var(--cor-backgroundbody);
     color: var(--cor-fonte);
+    overflow-x: hidden;
+}
+header{
+    padding-top: 0;
+}
+menu{
+    display: flex;
+    background-color: var(--cor-barramenu);
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: 100%;
+}
+menu ul{
+    list-style-type: none;
+    position: absolute;
+    box-shadow: 3px 3px 2px var(--cor-barramenu);
+    z-index: 99;
+    left: 0;
+}
+menu a:hover{
+    background-color: var(--cor-submenuhover);
+}
+menu li:hover>a {
+    background: var(--cor-submenu);
+    color: var(--cor-fontefooter);
+  }
+menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--cor-fontefooter);
+    font-family: var(--fonte-primaria);
+}
+menu li,
+  menu a {
+    list-style: none;
+    text-decoration: none;
+  }
+  menu ul {
+    float: left;
+    font-family:var(--fonte-primaria);
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+  menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+    
+  menu ul ul li {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+menu li:hover > ul{
+    display: block;
+}
+  menu li {
+    float: left;
+    position: relative;
+  }
+menu li ul{
+    position: absolute;
+   bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+menu li:hover > ul{
+    display: block;
+}
+  menu li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 45px;
+    height: 45px;
+    float:inline-end;
+    transition: all 0.1s linear;
+  }
+
+  menu li:hover>ul.submenu-1 {
+    display: block;
+    top: 45px;
+    left: 0;
+    padding: 5px;
+    width: 250px;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+  }
+  menu ul.submenu-1 a {
+    width: 210px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: var(--cor-submenu);
+  }
+  menu ul.submenu-2 a {
+    width: 310px;
+    padding: 0 20px;
+    border-radius: 5px;
+
+  }
+  menu li:hover>ul.submenu-2 {
+    display: block;
+    top: 0;
+    left: 195px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 0 5px 5px 5px;
+  }
+.submenu-1 {
+    background: var(--cor-submenu);
+  }
   
+  .submenu-1 a {
+    color: var(--cor-fontefooter);
+  }
+  
+  .submenu-1 li:hover>a {
+    background: var(--cor-submenuhover);
+  }
+
+  .submenu-2 {
+    background: var(--cor-submenuhover);
+  }
+  
+  .submenu-2 a {
+    color: var(--cor-fontefooter);
+  }
+  
+  .submenu-2 li:hover>a {
+    background: var(--cor-submenun2)
+  }
+main{
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: calc(100vh - 50px);
+}
+span#burguer{
+    background-color: var(--cor-barramenu);
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burguer:hover{
+    background-color: var(--cor-submenuhover);
 }
 
 .content{
@@ -35,55 +189,67 @@ body {
     display: flex;
     align-items:normal;
     justify-content: space-between;
-   
+    text-align: justify;
 }
 .content__strong{
-    font-size: 21px;
+    font-size: 1.313rem;
     font-family: var(--fonte-primaria);
     font-weight: bold;
 }
 .content__p{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: var(--fonte-primaria);
     line-height: 20px;
     margin-left: 2%;
     margin-top: 1%;
+    font-weight: 400;
 }
-
 .content__title{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-secundaria);
     line-height: 35px;
+    width: 90%;
+  
+    
 }
 footer{
+    width: 100%;
     padding: 1%;
     background-image: url(../imagens/rodapé.png);
     list-style: none;
     color: var(--cor-fontefooter);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: var(--fonte-terciaria);
     text-align: center;
     line-height: 20px;
 }
-
-.rodape{
+.footer__section{
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
     justify-content: center;
 }
-.rodape__texto {
+.footer_text {
     padding: 6%;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
-
-
+.trabalhe-conosco-imagem{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 50%;
+}
+.trabalhe-conosco-imagem:hover{
+    opacity: 0.9;
+}
 /* toogle - mostra/some */
 
-label { 
+.label-list {
     -webkit-appearance: push-button;
-    -moz-appearance: button; 
+    -moz-appearance: button;
     display: inline-block;
     cursor: pointer;
     padding: 5px;
@@ -93,8 +259,11 @@ label {
     background-color:var(--cor-label);
     width: 90%;
     margin-bottom: 1%;
+    font-size: 1.313rem;
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
   }
-  label:hover{
+  .label-list:hover{
     background-color:var(--cor-labelhover);
   }
  /* menu mostra e some */
@@ -152,7 +321,7 @@ label {
  #toggle-17 {
     display:none;
  }
- 
+
  /* CSS quando o checkbox está marcado */
  #toggle-1:checked ~ #mostra {
     display:block;
@@ -204,7 +373,75 @@ label {
  }
  #toggle-17:checked ~ #mostra {
     display:block;
+
  }
+ .label-list:hover{
+    background-color:var(--cor-labelhover);
+  }
+
+@media screen and (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .label-list{
+        width: 90%;
+        padding: 2%;
+    }
+    .content{
+       padding: 1%, 5%;
+       box-sizing: border-box;
+    }
+    #itens-menu{
+        visibility: visible;
+    }
+    span#burguer{
+        display: none;
+    }
+    header{
+        padding-top: 0;
+    }
+    .submenu-1{
+        width: 100%;
+        align-items: center;
+    }
+    menu{
+        top: 0;
+        display: block;
+    }
+    menu ul > li{
+        display: inline-block;
+    }
+    main{
+        width: 768;
+    }
+
+
+   /*  body {
+        font-size: 0.875rem;
+    }
+    .container__imagem{
+        width: 50vw;
+
+    }
+    .container__caixa{
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin:0;
+        text-align: center;
+    }
+    .secundario__imagem{
+        width: 50vw;
+    }*/
+
+}
+
+
+
+
+
+
+
 
 
 .img-quadrado {
@@ -227,7 +464,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
 
 .img-turma:hover {
     background-position: 100% 100%;
@@ -246,173 +483,17 @@ label {
 
 }
 
-@media screen and (max-width: 768px) {
-
-    .site-content{
-        display: block;
-        background-image: none;
-    }
-    .container__imagem{
-        width: 50vw;
-
-    }
-    .container__caixa{
-        margin: 2em 2em;
-    }
-    .secundario{
-        margin:0;
-        text-align: center;
-    }
-    .secundario__imagem{
-        width: 50vw;
-    }
-    body {
-        font-size: 14px;
-    }
-
-}
-
-/* Estilos para telas maiores que 1200 pixels */
-@media (min-width: 1200px) {
-    body {
-        font-size: 18px;
-    }
-}
 
 
 
-
-
-
-
-
-
-/*Configurações Padrões*/
-
-
-.menu {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-
-.menu li,
-.menu a {
-    list-style: none;
-    text-decoration: none;
-}
-ul.menu ul {
-    position: absolute;
-    display: none;
-    box-shadow: 3px 3px 2px var(--cor-barramenu);
-    z-index: 99;
-}
-
-/* Configurações nivel 1*/
-ul.menu {
-    float: left;
-    font-family:var(--fonte-primaria);
-    font-size: 16px;
-    padding: 0 5px;
-}
-
-.menu li {
-    float: left;
-    width: auto;
-    position: relative;
-}
-
-.menu li a {
-    display: block;
-    padding: 0 20px;
-    line-height: 45px;
-    height: 45px;
-    float: left;
-    transition: all 0.1s linear;
-}
-
-/* Configurações nivel 2*/
-.menu li:hover>ul.submenu-1 {
-    display: block;
-    top: 45px;
-    left: 0;
-    padding: 5px;
-    width: 250px;
-    border-radius: 0 0 5px 5px;
-}
-
-.menu ul.submenu-1 a {
-    width: 210px;
-    padding: 0 20px;
-    border-radius: 5px;
-}
-
-/* Configurações nivel 2*/
-.menu li:hover>ul.submenu-2 {
-    display: block;
-    top: 0;
-    left: 195px;
-    padding: 5px;
-    width: 350px;
-    border-radius: 0 5px 5px 5px;
-}
-
-.menu ul.submenu-2 a {
-    width: 310px;
-    padding: 0 20px;
-    border-radius: 5px;
-}
-
-/*Configurações de cores*/
-
-/*nivel 1*/
-.menu {
-    background: var(--cor-barramenu);
-}
-
-.menu a {
-    color: var(--cor-fontefooter);
-}
-
-.menu li:hover>a {
-    background: var(--cor-submenu);
-    color: var(--cor-fontefooter);
-}
-
-/*nivel 2*/
-.submenu-1 {
-    background: var(--cor-submenu);
-}
-
-.submenu-1 a {
-    color: var(--cor-fontefooter);
-}
-
-.submenu-1 li:hover>a {
-    background: var(--cor-submenuhover);
-}
-
-/*nivel 3*/
-.submenu-2 {
-    background: var(--cor-submenuhover);
-}
-
-.submenu-2 a {
-    color: var(--cor-fontefooter);
-}
-
-.submenu-2 li:hover>a {
-    background: var(--cor-submenun2)
-}
+  /* Outras páginas*/
 
 /*slider*/
 
 
 .barra-imagem {
-    width: 100%;
+    width: 100vw;
     height: auto;
-    border-image-repeat: none;
 }
 
 .imagensslides {
@@ -422,7 +503,7 @@ ul.menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .slider {
@@ -580,13 +661,13 @@ ul.menu {
 .quadro p {
     margin-bottom: 20px;
     font-family: fonte_geral;
-    font-size: 13px;
+    font-size: 0.813rem;
     color: var(--cor-submenu);
 }
 
 .quadro h2 {
     font-family: fonte_detalhes;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 10px;
 }
 
@@ -630,8 +711,6 @@ ul.menu {
 
 
 
-
-
 .quadro-contato {
     height: 250px;
     width: 350px;
@@ -643,7 +722,7 @@ ul.menu {
 .item-contato {
     color: var(--cor-fonte);
     font-family: fonte_geral;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .field {
@@ -651,9 +730,9 @@ ul.menu {
     margin: 15px 0;
 }
 
-.field label,
+.field .label-list,
 .field span {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     display: flex;
 
 }
@@ -693,13 +772,13 @@ input[type=submit] {
     border-radius: 10px;
     color: var(--cor-fontefooter);
     font-family: fonte_detalhes;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .sub-títulos {
     margin: 50px;
     font-family: fonte_detalhes;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 20px;
     margin-bottom: 10px;
     color: var(--cor-submenu);
@@ -721,7 +800,7 @@ input[type=submit] {
 }
 
 .tabela td {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
     font-family: fonte_geral;
     color: var(--cor-fontefooter);
@@ -738,7 +817,7 @@ input[type=submit] {
     color: var(--cor-fontefooter);
     font-family: fonte_detalhes;
     width: 20%;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
@@ -765,7 +844,7 @@ input[type=submit] {
 }
 
 .tabela-horarios td {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
     font-family: fonte_geral;
     color: var(--cor-fontefooter);
@@ -775,7 +854,7 @@ input[type=submit] {
 }
 
 .tabela-horarios td {
-    font-size: 10px;
+    font-size: 0.625rem;
     text-align: center;
     font-family: fonte_geral;
     color: var(--cor-fontefooter);
@@ -791,13 +870,13 @@ input[type=submit] {
     color: var(--cor-fontefooter);
     font-family: fonte_detalhes;
     width: 5%;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .tabela-horarios th:nth-child(1),
 td:nth-child(1) {
     width: 2%;
-   
+
 }
 
 .quadro-funcionario {
@@ -828,7 +907,7 @@ td:nth-child(1) {
 
 .resumos {
     max-width: 300px;
-    font-size: 15px;
+    font-size: 0.938rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -846,7 +925,7 @@ td:nth-child(1) {
 
 .quadro-noticias h2 {
     font-family: fonte_detalhes;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
@@ -856,7 +935,7 @@ td:nth-child(1) {
     color: var(--cor-fonte);
     text-align: justify;
     text-overflow: ellipsis;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 25px;
 }
 
@@ -959,7 +1038,7 @@ html ::-webkit-scrollbar-track {
 h4 {
     display: flex;
     display: inline;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: fonte_detalhes;
     color: var(--cor-barramenu);
 }

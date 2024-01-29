@@ -4,99 +4,102 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
+
     <meta name="keywords" content="CEDUP, CEDUP Guaramirim, cursos técnicos, Ensino Médio, pós médio, técnico, Guaramirim, contratação de professores">
     
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="icon" type="image/x-icon" href="imagens/favicon-32x32.png">
 
     <title>CEDUP Guaramirim - Centro de Educação Profissional Perfeito Manoel de Aguiar </title>
 
 </head>
 
-<body>
+<body onresize="tamanhoTela()">
     <header>
-        <nav class="menu">
-            <ul class="menu">
-                    <!-- Esse é o 1 nivel ou o nivel principal -->
-                <li><a href="https://cedupguaramirim.com.br">Home</a></li>
-                <li><a href="https://cedupguaramirim.com.br/html/nossahistoria.html">Conheça o CEDUP</a>
-                    <ul class="submenu-1">
-                        <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
-                        <li><a href="https://cedupguaramirim.com.br/html/nossahistoria.html">Sobre Nós</a></li>
-                        <li><a href="https://cedupguaramirim.com.br/html/quemsomos.html">Quem Somos</a></li>
-                        <li><a href="https://cedupguaramirim.com.br/html/galeriadeturmas.html">Galeria de Turmas</a></li>
-                        <li><a href="https://cedupguaramirim.com.br/html/infraestrutura.html">Infraestrutura</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Cursos Técnicos</a>
-                    <ul class="submenu-1">
-                        <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
-                        <li><a href="">Médio Integrado</a>
-                            <ul class="submenu-2">
-                                <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
-                                <li><a href="https://cedupguaramirim.com.br/html/cursos/administracao-integrado.html">Administração</a>
-                                </li>
-                                <li><a href="https://cedupguaramirim.com.br/html/cursos/cienciadados-integrado.html">Ciência de Dados</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pós Médio</a>
-                            <ul class="submenu-2">
-                                <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
-                                <li><a href="https://cedupguaramirim.com.br/html/cursos/administracao.html">Administração</a>
-                                </li>
-                                <li><a href="https://cedupguaramirim.com.br/html/cursos/dessistemas.html">Desenvolvimento de
-                                        Sistemas</a></li>
-                                <li><a href="https://cedupguaramirim.com.br/html/cursos/logistica.html">Logística</a></li>
-                                <li><a href="https://cedupguaramirim.com.br/html/cursos/qualidade.html">Qualidade</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="https://cedupguaramirim.com.br/html/destaques.html"">Destaques</a></li>
-                <li><a href="#">Contato</a>
-                    <ul class="submenu-1">
-                        <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
-                        <li><a href="https://cedupguaramirim.com.br/html/faleconosco.html">Fale Conosco</a></li>
-                        <li><a href="https://cedupguaramirim.com.br/html/trabalheconosco.html">Trabalhe Conosco</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Área do Aluno</a>
-                    <ul class="submenu-1">
-                        <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
-                        <li><a href="https://cedupguaramirim.com.br/html/matriculas.html">Matrícula</a></li>
-                        <li><a href="https://estudanteonline.sed.sc.gov.br/loginweb.aspx">Estudante On-line</a></li>
-                        <li><a href="https://classroom.google.com">Google Classroom</a></li>
-                        <li><a href="https://cedupguaramirim.com.br/html/cardapio.html">Cardápio</a></li>
-                        <li><a href="">Horários</a>
-                            <ul class="submenu-2">
-                                <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
-                                <li><a href="https://cedupguaramirim.com.br/html/horarioem.html"">Ensino Médio</a>
-                                </li>
-                                <li><a href="https://cedupguaramirim.com.br/html/horarionoturno.html"">Noturno</a>
-                                </li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>   
-        </nav>
+        <span id="burguer" class="material-symbols-outlined" " onclick="clickMenu()">
+            menu
+        </span>
+            <menu id="itens-menu" >
+                <ul class="submenu-1">
+                        <!-- Esse é o 1 nivel ou o nivel principal -->
+                    <li><a href="https://cedupguaramirim.com.br">Home</a></li>
+                    <li><a href="#">Conheça o CEDUP</a>
+                        <ul class="submenu-1">
+                            <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+                            <li><a href="https://cedupguaramirim.com.br/html/nossahistoria.html">Sobre Nós</a></li>
+                            <li><a href="https://cedupguaramirim.com.br/html/quemsomos.html">Quem Somos</a></li>
+                            <li><a href="https://cedupguaramirim.com.br/html/galeriadeturmas.html">Galeria de Turmas</a></li>
+                            <li><a href="https://cedupguaramirim.com.br/html/infraestrutura.html">Infraestrutura</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cursos Técnicos</a>
+                        <ul class="submenu-1">
+                            <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+                            <li><a href="">Médio Integrado</a>
+                                <ul class="submenu-2">
+                                    <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
+                                    <li><a href="https://cedupguaramirim.com.br/html/cursos/administracao-integrado.html">Administração</a> </li>                        </li>
+                                    <li><a href="https://cedupguaramirim.com.br/html/cursos/cienciadados-integrado.html">Ciência de Dados</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pós Médio</a>
+                                <ul class="submenu-2">
+                                    <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
+                                    <li><a href="https://cedupguaramirim.com.br/html/cursos/administracao.html">Administração</a> </li>
+                                    <li><a href="https://cedupguaramirim.com.br/html/cursos/dessistemas.html">Desenvolvimento de Sistemas</a></li>
+                                    <li><a href="https://cedupguaramirim.com.br/html/cursos/logistica.html">Logística</a></li>
+                                    <li><a href="https://cedupguaramirim.com.br/html/cursos/qualidade.html">Qualidade</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="https://cedupguaramirim.com.br/html/destaques.html">Destaques</a></li>
+                    <li><a href="#">Contato</a>
+                        <ul class="submenu-2">
+                            <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+                            <li><a href="https://cedupguaramirim.com.br/html/faleconosco.html">Fale Conosco</a></li>
+                            <li><a href="https://cedupguaramirim.com.br/html/trabalheconosco.html">Trabalhe Conosco</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Área do Aluno</a>
+                        <ul class="submenu-2">
+                            <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+                            <li><a href="https://cedupguaramirim.com.br/html/matriculas.html">Matrícula</a></li>
+                            <li><a href="https://estudanteonline.sed.sc.gov.br/loginweb.aspx">Estudante On-line</a></li>
+                            <li><a href="https://classroom.google.com">Google Classroom</a></li>
+                            <li><a href="https://cedupguaramirim.com.br/html/cardapio.html">Cardápio</a></li>
+                            <li><a href="">Horários</a>
+                                <ul class="submenu-3">
+                                    <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
+                                    <li><a href="https://cedupguaramirim.com.br/html/horarioem.html"">Ensino Médio</a>
+                                    </li>
+                                    <li><a href="https://cedupguaramirim.com.br/html/horarionoturno.html"">Noturno</a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>  
+            </menu>
+          
     </header>
-   
+ 
     <main class="content">
-        <section>
+        <article>
                <h1 class="content__title">Documentos necessários para contratação de professores:</h1> <br><br>
                      
-                        <label class="content__strong" for="toggle-1">Declaração de escolha de aulas 
+                        <label class="label-list" for="toggle-1">Declaração de escolha de aulas 
                             <input type="checkbox" id="toggle-1">
                             <p class="content__p" id="mostra">
                                 A declaração de escolha de aulas é o e-mail enviado pela SED comprovando o preenchimento da 
                                 vaga pelo candidato 
                             </p>
                          </label>
-                         <label class="content__strong" for="toggle-2">Diploma e histórico escolar ou atestado de frequência atualizado
+                         <label class="label-list" for="toggle-2">Diploma e histórico escolar ou atestado de frequência atualizado
                             <input type="checkbox" id="toggle-2">
                             <p class="content__p" id="mostra">
                                 Para ser considerado <b>habilitado</b>, o professor deverá portar diploma de Licenciatura Plena 
@@ -109,51 +112,51 @@
                                 considerados <b>não habilitados.</b>
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-3">RG 
+                        <label class="label-list" for="toggle-3">RG 
                             <input type="checkbox" id="toggle-3">
                             <p class="content__p" id="mostra">
                                 A data de emissão do documento não poderá passar da sua validade, ou seja, 10 anos.
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-4">CPF
+                        <label class="label-list" for="toggle-4">CPF
                             <input type="checkbox" id="toggle-4">
                             <p class="content__p" id="mostra">
                                 Devidamente regularizado
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-5">Título de eleitoral</li>
+                        <label class="label-list" for="toggle-5">Título de eleitoral</li>
                             <input type="checkbox" id="toggle-5">
                             <p class="content__p" id="mostra">
 
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-6">Certidão de quitação eleitoral
+                        <label class="label-list" for="toggle-6">Certidão de quitação eleitoral
                             <input type="checkbox" id="toggle-6">
                             <p class="content__p" id="mostra">
                             A certidão de quitação eleitoral deverá ser emitida no site do 
                             <a href="https://www.tse.jus.br/servicos-eleitorais/certidoes/certidao-de-quitacao-eleitoral">TSE</a>
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-7"> Carteira de trabalho 
+                        <label class="label-list" for="toggle-7"> Carteira de trabalho 
                             <input type="checkbox" id="toggle-7">
                             <p class="content__p" id="mostra">
 
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-8">PIS/PASEP
+                        <label class="label-list" for="toggle-8">PIS/PASEP
                             <input type="checkbox" id="toggle-8">
                             <p class="content__p" id="mostra">
                                 
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-9">Comprovante de conta bancária no Banca do Brasil
+                        <label class="label-list" for="toggle-9">Comprovante de conta bancária no Banco do Brasil
                             <input type="checkbox" id="toggle-9">
                             <p class="content__p" id="mostra">
                                 Para fins de comprovação, o candidato poderá apresentar seu cartão ou cópia de tela do
                                 aplicativo bancário.
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-10">Comprovante de residência 
+                        <label class="label-list" for="toggle-10">Comprovante de residência 
                            <input type="checkbox" id="toggle-10">
                            <p class="content__p" id="mostra">
                                 São aceitos como comprovante de residência talões de água, luz ou telefone atualizado (até 90 dias) e em
@@ -161,7 +164,7 @@
                                 em cartório, de que reside no respectivo endereço.
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-11">Certidão de antecedentes criminais
+                        <label class="label-list" for="toggle-11">Certidão de antecedentes criminais
                             <input type="checkbox" id="toggle-11">
                             <p class="content__p" id="mostra">
                                 A certidão deverá ser emitida pela <a href="https://delegaciavirtual.sc.gov.br/atestado-antecedentes/novo">
@@ -169,26 +172,42 @@
                                 </a>
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-12">Atestado médico 
+                        <label class="label-list" for="toggle-12">Atestado médico 
                             <input type="checkbox" id="toggle-12">
                             <p class="content__p" id="mostra">
                             Ter validade inferior a 30 dias e deve comprovar a aptidão física e mental para o exercício das 
                                 atribuições do cargo
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-13">Comprovante de quitação dos serviços militares
+                        <label class="label-list" for="toggle-13">Comprovante de quitação dos serviços militares
                             <input type="checkbox" id="toggle-13">
                             <p class="content__p" id="mostra">
                                 Pessoas do sexo masculino devem apresentar o comprovante de quitação das obrigações do Serviço Militar
                             </p>
                         </label>
-                        <label class="content__strong" for="toggle-14">Comprovante de pleno exercício dos seus direitos civis 
+                        <label class="label-list" for="toggle-14">Comprovante de pleno exercício dos seus direitos civis 
                             <input type="checkbox" id="toggle-14">
                             <p class="content__p" id="mostra">
                                 Para comprovar seus direitos civis, deverá emitir a declaração no site do <a href="https://www.tjsc.jus.br/web/judicial/certidoes"> TJSC</a>
                             </p>
+                            <p class="content__p" id="mostra">
+                                Ao solicitar sua certidão, em Instância Judicial selecione as opções <strong>Comarcas e Turmas (Primeiro Grau) e Tribunal de Justiça (Segundo Grau)</strong>,
+                                em seguida, em Modelo de certidão, selecione a opção <strong>Cível</strong>, conforme apresenta a imagem a seguir:
+                                                            
+                            </p>
+                            <img class="trabalhe-conosco-imagem" id="mostra" src="../imagens/trabalhe-conosco/certidao-direitos-civis.PNG" alt="A imagem apresenta uma cópia da tela de 
+                            solicitação de certidões criminais, na qual há o texto Instância Judicial e as opções marcadas em um checkbox Comarcas e 
+                            Turmas Recursais (Primeiro Grau) e Tribunal de Justiça (Segundo Grau). A linha seguinte solicita o modelo de certidão, cotendo
+                            o texto Modelo(s) de certidão e as opções Criminal, Cível, Eleitoral (Exclusivo para pessoa física), Recuperação
+                            Judicial, Extrajudicial e Falência (Exclusivo para processos de Primeiro Grau). Cada opção está uma em uma linha com um checkbox ao lado,
+                            sendo a única opção marcada, a Cível.">
+                            <p class="content__p" id="mostra">
+                                Preencha os dados solicitados e conclua a socilicitação. Aguarde alguns minutos e receberá duas mensagens de e-mail,
+                                sendo a primeira, a confirmação da solicitação, e a segunda o link e código de acesso da sua certidão.
+                            </p>
+                          
                         </label>
-                        <label class="content__strong" for="toggle-15">Comprovante de qualificação cadastral no Sistema de Escrituração Digital das Obrigações Fiscais,
+                        <label class="label-list" for="toggle-15">Comprovante de qualificação cadastral no Sistema de Escrituração Digital das Obrigações Fiscais,
                             Previdenciárias e Trabalhistas (eSocial)
                             <input type="checkbox" id="toggle-15">
                             <p class="content__p" id="mostra">
@@ -197,19 +216,19 @@
                             </p>
                         </label>
                    
-                </section>
+        </article>
     </main>
 
-    <div class="barra-imagem">
+<!-- <div class="barra-imagem">
         <img src="../imagens/fundo.png" alt="">
-    </div>
+    </div> -->
 
     <footer class="footer">
-        <section class="rodape">
+        <section class="footer__section">
             <img src="../imagens/branca.png" atl="Logo Cedup" width="150px auto" />
         
         
-            <div class="rodape__texto">
+            <div class="footer_text">
                 <p>Endereço</p>
                 <br>
                 BR 280, Km 53, n° 10161
@@ -219,7 +238,7 @@
                 CEP: 89.270-000
             </div>
             
-            <div class="rodape__texto">
+            <div class="footer_text">
                 <p>Contato</p>
                 <br>
                 Telefone: (47)3276-9270 | (47)3276-9271
@@ -227,7 +246,7 @@
                 E-mail: cedupguaramirim@sed.sc.gov.br
             </div>
            
-            <div class="rodape__texto">
+            <div class="footer_text">
                 <p>Siga-nos</p>
                 <br>
 
@@ -249,5 +268,28 @@
             </p>
             </section>
     </footer>
+
+    <script>
+        function clickMenu(){
+            var itensMenu = document.getElementById('itens-menu');
+            if(itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none';
+            } else {
+                itensMenu.style.display = 'block';
+            }
+        }
+      
+        function tamanhoTela(){
+            if (window.innerWidth >=768){
+                itensMenu.style.display = 'none';
+            } else {
+                itensMenu.style.display = 'block';
+            }
+        }
+
+
+
+    </script>
+   
 </body>
 </html>
