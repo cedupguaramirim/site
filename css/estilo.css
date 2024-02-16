@@ -31,139 +31,72 @@ body {
 header{
     padding-top: 0;
 }
-menu{
+*{
+    margin: 0; 
+    padding: 0;
+}
+body{
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1em;
+}
+.menu{
+    list-style:none;
+    float:left;
+    align-items: center;
+    width: 100%;
     display: flex;
-    background-color: var(--cor-barramenu);
-    position: fixed;
-    top: 10;
-    left: 0;
-    width: 100%;
-}
-menu ul{
-    list-style-type: none;
-    position: absolute;
-    box-shadow: 3px 3px 2px var(--cor-barramenu);
-    z-index: 99;
-    left: 0;
-}
-menu a:hover{
-    background-color: var(--cor-submenuhover);
-}
-menu li:hover>a {
-    background: var(--cor-submenu);
-    color: var(--cor-fontefooter);
-  }
-menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    color: var(--cor-fontefooter);
+    flex-wrap: wrap;
     font-family: var(--fonte-primaria);
+    background-color: var(--cor-barramenu);
 }
-menu li,
-  menu a {
-    list-style: none;
-    text-decoration: none;
-  }
-  menu ul {
-    float: left;
-    font-family:var(--fonte-primaria);
-    font-size: 1rem;
-    padding: 0 5px;
-  }
-  menu ul ul{
-    display: none;
+.menu li{
+    position:relative;
+    float:left;
+}
+.menu li a{
+    color:var(--cor-fontefooter); 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+.menu li a:hover{
+    background:var(--cor-submenuhover);
+    color: var(--cor-fontefooter);
+    text-shadow:0px 0px 5px #fff;
+}
+.menu li ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:var(--cor-submenuhover);
+    display:none;
+}
+.menu li ul a{
+    color: var(--cor-fontefooter);
+}
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+.menu li ul li{
+    display:block;
+    width:150px;
+}
+.menu li ul li ul {
     position: absolute;
-    top: 100%;
-    left: 0;
-  }
-    
-  menu ul ul li {
-    position: relative;
-    margin: 0;
-    width: 100%;
-  }
-menu li:hover > ul{
-    display: block;
-}
-  menu li {
-    float: left;
-    position: relative;
-  }
-menu li ul{
-    position: absolute;
-   bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    z-index: 1;
-}
-
-menu li:hover > ul{
-    display: block;
-}
-  menu li a {
-    display: block;
-    padding: 0 20px;
-    line-height: 45px;
-    height: 45px;
-    float:inline-end;
-    transition: all 0.1s linear;
-  }
-
-  menu li:hover>ul.submenu-1 {
-    display: block;
-    top: 45px;
-    left: 0;
-    padding: 5px;
-    width: 250px;
-    border-radius: 0 0 5px 5px;
-    width: 100%;
-  }
-  menu ul.submenu-1 a {
-    width: 210px;
-    padding: 0 20px;
-    border-radius: 5px;
-    background-color: var(--cor-submenu);
-  }
-  menu ul.submenu-2 a {
-    width: 310px;
-    padding: 0 20px;
-    border-radius: 5px;
-
-  }
-  menu li:hover>ul.submenu-2 {
-    display: block;
     top: 0;
-    left: 195px;
-    padding: 5px;
-    width: 100%;
-    border-radius: 0 5px 5px 5px;
-  }
-.submenu-1 {
-    background: var(--cor-submenu);
-  }
-  
-  .submenu-1 a {
-    color: var(--cor-fontefooter);
-  }
-  
-  .submenu-1 li:hover>a {
-    background: var(--cor-submenuhover);
-  }
+    left: 100%;
+    background-color: var(--cor-submenuhover);
+    display: none;
+}
 
-  .submenu-2 {
-    background: var(--cor-submenuhover);
-  }
-  
-  .submenu-2 a {
-    color: var(--cor-fontefooter);
-  }
-  
-  .submenu-2 li:hover>a {
-    background: var(--cor-submenun2)
-  }
+.menu li ul li:hover ul {
+    display: block;
+}
+
+.menu li ul li ul li {
+    display: block;
+    width: 150px;
+}
 main{
     width: 90vw;
     margin: auto;
@@ -404,11 +337,12 @@ footer{
         width: 100%;
         align-items: center;
     }
-    menu{
+    nav{
+
         top: 0;
         display: block;
     }
-    menu ul > li{
+    nav ul > li{
         display: inline-block;
     }
     main{
