@@ -6,7 +6,7 @@
     --cor-submenuhover: #47ace0;
     --cor-submenun2: #3b91bd;
     --cor-submenu: #4476bb;
-    --cor-backgroundbody: #c9edff;
+    --cor-backgroundbody: #ffffff;
     --cor-fonte: #7c7a7b;
     --cor-fontefooter: #ffffff;
     --cor-label: #b8e1f8c8;
@@ -440,33 +440,6 @@ footer{
 
 }
 
-.slider {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: var(--cor-backgroundbody);
-
-}
-
-.slides {
-    width: 100%;
-    height: auto;
-    display: flex;
-
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 100%;
-}
-
-.slide img {
-   width: 1910px;
-}
 
 .manual-navegacao {
     position: absolute;
@@ -1008,3 +981,79 @@ padding: 20px;}
 a{
     text-decoration: none;
 }
+
+
+ .slider { 
+ display: block; 
+ height: 300px; 
+ width: 1500px; 
+ margin: auto; 
+ margin-top: 20px; 
+ margin-bottom: 300px;
+ position: relative; 
+ padding: 30px;
+padding-left: 0px;
+ } 
+ 
+ .slider li { 
+ list-style: none; 
+ position: absolute; 
+ } 
+ 
+ .slider img { 
+ margin: auto; 
+ height: 100%; 
+ width: 100%; 
+ vertical-align: top; 
+ } 
+ 
+ .slider input { 
+ display: none; 
+ } 
+ 
+ 
+ .slider label { 
+ background-color: #000; 
+ bottom: 10px; 
+ cursor: pointer; 
+ display: block; 
+ height: 10px; 
+ position: absolute; 
+ width: 10px; 
+ z-index: 10; 
+ } 
+ 
+ .slider li:nth-child(1) label { 
+ left: 10px; 
+ } 
+ .slider li:nth-child(2) label { 
+ left: 40px; 
+ } 
+ .slider li:nth-child(3) label { 
+ left: 70px; 
+ } 
+ .slider li:nth-child(4) label { 
+ left: 100px; 
+ } 
+.slider li:nth-child(5) label { 
+left: 130px; 
+} 
+.slider li:nth-child(6) label { 
+left: 160px; 
+} 
+.slider li:nth-child(7) label { 
+left: 190px; 
+}
+
+
+ .slider img { 
+ opacity: 0; 
+ visibility: hidden; 
+ } 
+ 
+ .slider li input:checked ~ img { 
+ opacity: 1; 
+ visibility: visible; 
+ z-index: 10; 
+ } 
+ 
