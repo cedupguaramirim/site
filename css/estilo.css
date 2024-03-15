@@ -130,6 +130,10 @@ main {
     padding: 10px;
     border-radius: 10px;
     min-height: calc(100vh - 50px);
+  
+}
+main > div#site-content{
+    justify-content: space-between;
 }
 
 
@@ -1083,12 +1087,10 @@ a {
 .slider {
     display: block;
     height: 300px;
-    width: 1500px;
+    width: 100%;
     margin: auto;
-    margin-top: 20px;
     margin-bottom: 300px;
     position: relative;
-    padding: 30px;
     padding-left: 0px;
 }
 
