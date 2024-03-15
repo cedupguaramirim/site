@@ -7,10 +7,36 @@ Tablet: de 768px a 1200px
 Telas grandes: acima de 1200px
 */
 @media screen and (min-width: 768px) and (max-width: 992px){
+    .slider {
+        display: block;
+        height: 300px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 300px;
+        position: relative;
+        padding-left: 0px;
+        margin-bottom: 200px;
+    }
 }
 
 
-@media screen and (mxn-width: 767px){
+@media screen and (max-width: 767px){
+    .slider {
+        display: none;
+    }
+    .divisões {
+        display: block;
+        padding: 0px;
+        height: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    .quadro{
+        padding-bottom: 5px;
+    }
+    
+    
     span#burguer {
         display: none;
     }
