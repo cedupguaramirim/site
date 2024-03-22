@@ -238,8 +238,7 @@ footer div{
 .creditos {
     padding: 6%;
     font-size: 0.875rem;
-text-align: center;
-
+    text-align: center;
 }
 .trabalhe-conosco-imagem{
     border-radius: 8px;
@@ -255,8 +254,8 @@ text-align: center;
 /* toogle - mostra/some */
 
 .label-list {
-    -webkit-appearance: push-button;
-    -moz-appearance: button;
+   /* -webkit-appearance: push-button;
+    -moz-appearance: button;*/
     display: inline-block;
     cursor: pointer;
     padding: 5px;
