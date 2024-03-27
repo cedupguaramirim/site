@@ -1384,8 +1384,6 @@ section.cursos .flex{
     flex: 0 0 calc(33.333% - 50px); 
     margin-bottom: 20px;
     text-align: justify;
-    
-
 }
 
 .quem-somos .quem-somos:hover{
@@ -1404,8 +1402,6 @@ section.cursos .flex{
 .quem-somos .quem-somos a{
     text-align: justify;
 }
-
-
 
 .quem-somos-titulo{
     text-align: center;
