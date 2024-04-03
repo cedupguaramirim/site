@@ -6,6 +6,7 @@ Celular: de 600px a 768px
 Tablet: de 768px a 1200px
 Telas grandes: acima de 1200px
 */
+
 @media screen and (min-width: 768px) and (max-width: 992px){
     .slider {
         display: block;
@@ -17,7 +18,14 @@ Telas grandes: acima de 1200px
         padding-left: 0px;
         margin-bottom: 200px;
     }
+
+    header nav.menu-desktop ul li{
+        padding: 7px;
+        margin: 4px;
+    }
+
 }
+
 
 
 @media screen and (max-width: 767px){
@@ -49,4 +57,215 @@ Telas grandes: acima de 1200px
     main{
         width: 768px;
     }
+
+/*Estilo menu mobile*/
+
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+
+    .btn-abrir-menu span{
+        color: #4476bb;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 50px;
+    }
+
+    .btn-fechar{
+        padding: 20px 4%;
+    }
+
+    .menu-mobile .btn-fechar span{
+        color: #4476bb;
+        font-size: 40px;
+    }
+
+    .menu-mobile{
+        background-color: #171f32;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .menu-mobile.abrir-menu{
+        width: 60%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu{
+        display: block;
+    }
+
+    .menu-mobile nav ul{
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li a{
+       color: #fff;
+       font-size: 20px;
+       font-weight: 300;
+       padding: 20px 8%;
+       display: block;
+    }
+
+    .menu-mobile nav ul li:hover{
+        background-color: #4476bb;
+    }
+
+    .overlay-menu{
+        background-color: #0000007a;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+    
+
+    
+
+
+/*Fim menu mobile*/
 }
+
+@media screen and (max-width: 600px) {
+    section.cursos {
+        padding: 5% 2%; 
+    }
+
+    .cursos .cursos-box {
+        padding: 5%; 
+    }
+
+    .cursos .cursos-box h3 {
+        font-size: 1.5em; 
+    }
+
+    .titulo-area {
+        font-size: 1.5em; 
+    }
+
+/*Estilo menu mobile*/
+
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+
+    .btn-abrir-menu span{
+        color: #4476bb;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 50px;
+    }
+
+    .btn-fechar{
+        padding: 20px 4%;
+    }
+
+    .menu-mobile .btn-fechar span{
+        color: #4476bb;
+        font-size: 40px;
+    }
+
+    .menu-mobile{
+        background-color: #171f32;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .menu-mobile.abrir-menu{
+        width: 60%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu{
+        display: block;
+    }
+
+    .menu-mobile nav ul{
+        text-align: right;
+    }
+
+    .menu-mobile nav ul li a{
+       color: #fff;
+       font-size: 20px;
+       font-weight: 300;
+       padding: 20px 8%;
+       display: block;
+    }
+
+    .menu-mobile nav ul li:hover{
+        background-color: #4476bb;
+    }
+
+    .overlay-menu{
+        background-color: #0000007a;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+
+/*Fim menu mobile*/
+}
+
+/* Começo Quem Somos */
+
+@media screen and (min-width: 375px) and (max-width: 667px){
+        .quem-somos-titulo{
+            font-size: 30px;
+        
+        }
+        .imagemdiretora{
+            max-height: 150px;
+            max-width: 150px;
+            margin-right: 77px;
+        }
+
+        .quem-somos-box{
+            
+          
+            padding-left: -75px;
+            border-radius: 25px;
+            margin-top: 45px;
+            transition: .2s;
+            flex: 15px; 
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+    
+}
+
+

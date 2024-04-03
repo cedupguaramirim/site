@@ -43,10 +43,12 @@ body {
     max-width: 940px;
     margin: 0 auto;
     margin-top: 35px;
+    font-size:0;
 }
 
 header {
     padding: 55px 4%;
+    display: block;
 }
 
 header>.interface {
@@ -76,7 +78,7 @@ header nav ul {
 }
 
 header nav.menu-desktop ul li {
-    display: inline-block;
+    display: inline;
     padding: 0 30px;
 
 }
@@ -120,6 +122,14 @@ ul.menu {
     transition: all 0.2s linear;
 }
 
+.menu-mobile{
+    display: none;
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
 /*Fim Cabecalho*/
 
 main{
@@ -153,8 +163,8 @@ main{
     line-height: 20px;
     margin-top: 1%;
     font-weight: 400;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 400px;
+    margin-right: 400px;
     text-align: justify;
 }
 
@@ -235,6 +245,7 @@ footer div{
     justify-content: center;
   
 }
+
 .creditos {
     padding: 6%;
     font-size: 0.875rem;
@@ -1330,9 +1341,6 @@ section.cursos .flex{
     box-shadow: 0px 0px 20px #171f32b6;
     transform: scale(1.05);
 }
-.cursos .cursos-box img {
-    max-height: 200px;
-}
 .cursos .cursos-box h3{
     font-size: 28px;
     color: #000;
@@ -1351,6 +1359,18 @@ section.cursos .flex{
     font-size: 50px;
     color: #000;
 }
+.cursos .cursos-subtitulo {
+    font-size: 14px;
+    text-align: center;
+}
+.cursos .cursos-box img {
+    display: block;
+    margin: 0 auto;
+    max-height: 200px;
+}
+.cursos h3{
+    text-align: center;
+}
 
 /* Início da Área do Aluno */
 
@@ -1367,21 +1387,74 @@ section.cursos .flex{
   
 }
 
-.flex{
+.flex1{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align:justify;
+    word-spacing: 1px;
+}
+
+.flex2{
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+.flex3{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.flex4{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex5{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.flex6{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.flex7{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: -15px;
 }
 
 .quem-somos-box{
     color: #2e2e2e;
-    padding: 40px;
+    padding: 25px;
     border: 2px solid #345091;
     border-radius: 15px;
     margin-top: 45px;
     transition: .2s;
-    flex: 0 0 calc(33.333% - 50px); 
+    flex: 0 0 calc(53.531% - 50px); 
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -1401,6 +1474,7 @@ section.cursos .flex{
 }
 .quem-somos .quem-somos a{
     text-align: justify;
+    font-size: 25px;
 }
 
 .quem-somos-titulo{
@@ -1419,3 +1493,61 @@ section.cursos .flex{
     text-align: center;
     font-weight: blod;
 }
+
+.quadroancoras1{
+    margin-left: 15px;
+}
+
+.imagemdiretora{
+    margin-left: 88px;
+}
+
+.tabela-dev {
+    border-collapse: collapse;
+    width: 50%;
+    align-self:center;
+}
+
+.tabela-dev th, .tabela-dev td {
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.tabela-dev th {
+    background-color: #b6b6b6;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #696969;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border:#000;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+  }
+
+  .dropdown-content th, tr {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:grid;
+  }

@@ -8,7 +8,10 @@
     <link rel="icon" type="image/x-icon" href="../imagens/favicon-32x32.png">
     <meta name="keywords" content="CEDUP, cursos,matrícula, escola, técnico, Guaramirim">
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+    <script src="../menu.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
 </head>
 
 <header>
@@ -53,6 +56,59 @@
 
         </nav> <!--menu-desktop-->
 
+        <div class="btn-abrir-menu" id="btn-menu">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+
+            <div class="btn-fechar">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="https://cedupguaramirim.com.br">
+                        <span class="material-symbols-outlined">home</span>
+                        <span>Início</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://cedupguaramirim.com.br/html/nossahistoria.html">
+                        <span class="material-symbols-outlined">info</span>
+                        <span>Sobre</span></a>
+                    </li>
+
+                    <li>
+                        <a href="https://cedupguaramirim.com.br/html/cursos.html">
+                        <span class="material-symbols-outlined">school</span>
+                        Cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="https://cedupguaramirim.com.br/html/areadoaluno.html">
+                        <span class="material-symbols-outlined">book</span>
+                        Área do Aluno</a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                        <span class="material-symbols-outlined">chat</span>
+                        Contato</a>
+
+                    </li>
+
+                </ul>
+
+            </nav> 
+
+
+         </div> <!--menu-mobile -->
+
+         <div class="overlay-menu" id="overlay-menu"></div>
+
     </div> <!--interface-->
 
 </header>
@@ -75,23 +131,26 @@
     <section class="quem-somos" id="quem-somos" name="quem-somos">
         <div class="interface" >
             <h2 class="quem-somos-titulo">Equipe Gestora</h2>
-                 <div class="flex">
+                <br>
+                <br>
+                 <div class="flex1">
                         <div class="quem-somos-box">
-                            <img src="../imagens/funcionarios/cris.jpg" alt="#">
+                            <img src="../imagens/funcionarios/cris.jpg" alt="#"  class="imagemdiretora">
                             <br>
                             <p class="quem-somos-cargo"><b>Cristiana Poltronieri Ziehlsdorff </b></p>
                             <p class="quem-somos-subtitulo">Diretora Geral</p>
                             <br>
-                            <a>Sou responsável por gerir a unidade escolar nos segmentos pedagógicos, administrativos, estruturais e financeiros, priorizando a qualidade de ensino, o acesso e permanência dos estudantes na escola e o bom funcionamento do CEDUP.
+                            <a>Sou responsável por gerir a unidade escolar nos segmentos pedagógicos, administrativos, estruturais e financeiros, 
+                            priorizando a qualidade de ensino, o acesso e permanência dos estudantes na escola e o bom funcionamento do CEDUP.</a>
                             <br><br>  
                             <p class="quem-somos-subtitulo"> Contato: cedupguaramirim@sed.sc.gov.br </p>
                             </a>
                         </div>
                 </div>
-                <div class="flex">
+                <div class="flex2">
 
                         <div class="quem-somos-box">
-                            <img src="../imagens/funcionarios/giovanna.jpg" alt="#">
+                            <img src="../imagens/funcionarios/giovanna.jpg" alt="#"  class="imagemdiretora">
                             <br>
                             <p class="quem-somos-cargo"><b>Giovanna Cristina Fiamoncini </b></p>
                             <p class="quem-somos-subtitulo">Assessora de Direção <br> Coordenadora da Educação Profissional</p>
@@ -104,7 +163,7 @@
                     
 
                         <div class="quem-somos-box">
-                            <img src="../imagens/funcionarios/Patricia.jpeg" alt="#">
+                            <img src="../imagens/funcionarios/Patricia.jpeg" alt="#"  class="imagemdiretora">
                             <br>
                             <p class="quem-somos-cargo"><b>Patricia de Aguiar </b></p>
                             <p class="quem-somos-subtitulo">Assessora de Direção <br> Coordenadora do Ensino Médio</p>
@@ -121,9 +180,9 @@
     <section class="quem-somos" id="quem-somos" name="quem-somos">
          <div class="interface" >
             <h2 class="quem-somos-titulo">Secretaria</h2>
-                <div class="flex">
+                <div class="flex3">
                         <div class="quem-somos-box">
-                            <img src="../imagens/funcionarios/jaque.jpg" alt="#">
+                            <img src="../imagens/funcionarios/jaque.jpg" alt="#" class="imagemdiretora">
                             <br>
                             <p class="quem-somos-cargo"><b>Jaqueline Fernandes da Silva </b></p>
                             <p class="quem-somos-subtitulo">Assistente de Educação</p>
@@ -140,9 +199,9 @@
     <section class="quem-somos" id="quem-somos" name="quem-somos">
          <div class="interface" >
             <h2 class="quem-somos-titulo">Pedagógico</h2>
-                <div class="flex">
+                <div class="flex4">
                      <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/carme.jpg" alt="#">
+                        <img src="../imagens/funcionarios/carme.jpg" alt="#" class="imagemdiretora">
                         <br>
                         <p class="quem-somos-cargo"><b>Carme Neide Fiamoncini</b></p>
                         <p class="quem-somos-subtitulo">Assistente Técnico Pedagógico</p>
@@ -156,9 +215,9 @@
     <section class="quem-somos" id="quem-somos" name="quem-somos">
         <div class="interface" >
             <h2 class="quem-somos-titulo">Orientação de Cursos</h2>
-                <div class="flex">
+                <div class="flex5">
                     <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/Karen.jpg" alt="#">
+                        <img src="../imagens/funcionarios/Karen.jpg" alt="#"  class="imagemdiretora">
                         <br>
                         <p class="quem-somos-cargo"><b>Karen Andressa de Carvalho</b></p>
                         <p class="quem-somos-subtitulo">Orientadora do Eixo de Informação e Comunicação</p>
@@ -170,11 +229,11 @@
                     </div>
                 
                     <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/Daniela.PNG" alt="#">
+                        <img src="../imagens/funcionarios/Daniela.PNG" alt="#"  class="imagemdiretora">
                          <br>
                          <p class="quem-somos-cargo"><b>Daniela Friedemann</b></p>
                         <p class="quem-somos-subtitulo">Orientadora do Eixo de Gestão e Negócios</p>
-                        <br>
+                        <br><br>
                         <a>Sou responsável por coordenar as ações dos cursos do eixo de Gestão e Negócios e orientar professores e estudantes na execução de suas atividades.
                         <br><br>  
                         <p class="quem-somos-subtitulo">Contato: <br>  daniela.friedmann@sed.sc.gov.br</p>
@@ -187,9 +246,9 @@
     <section class="quem-somos" id="quem-somos" name="quem-somos">
         <div class="interface" >
             <h2 class="quem-somos-titulo">Equipe de Tecnologia</h2>
-                <div class="flex">
+                <div class="flex6">
                     <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/Wellington.jpeg" alt="#">
+                        <img src="../imagens/funcionarios/Wellington.jpeg" alt="#" class="imagemdiretora">
                         <br>
                         <p class="quem-somos-cargo"><b>Wellington Luiz de Andrade</b></p>
                         <p class="quem-somos-subtitulo">Orientador do Laboratório Maker</p>
@@ -197,7 +256,7 @@
                         <p>Sou responsável por articular atividades e projetos com professores e estudantes que promovem a cultura maker.</p>
                     </div>
                     <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/Nathã.jpeg" alt="#">
+                        <img src="../imagens/funcionarios/Nathã.jpeg" alt="#" class="imagemdiretora">
                         <br>
                         <p class="quem-somos-cargo"><b>Nathã Luis Schug</b></p>
                         <p class="quem-somos-subtitulo">Orientador de Tecnologia Educacional</p>
@@ -211,9 +270,9 @@
     <section class="quem-somos" id="quem-somos" name="quem-somos">
         <div class="interface" >
             <h2 class="quem-somos-titulo">Orientação de Convivência</h2>
-                <div class="flex">
+                <div class="flex7">
                     <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/Luzia.jpeg" alt="#">
+                        <img src="../imagens/funcionarios/Luzia.jpeg" alt="#" class="imagemdiretora">
                         <br>
                         <p class="quem-somos-cargo"><b>Luzia Aparecida Borges</b></p>
                         <p class="quem-somos-subtitulo">Orientadora de Convivência Noturno</p>
@@ -222,7 +281,7 @@
                     </div>
                     
                     <div class="quem-somos-box">
-                        <img src="../imagens/funcionarios/Maguiane.jpeg" alt="#">
+                        <img src="../imagens/funcionarios/Maguiane.jpeg" alt="#" class="imagemdiretora">
                         <br>
                         <p class="quem-somos-cargo"><b>Maguiane Stauski de Oliveira</b></p>
                         <p class="quem-somos-subtitulo">Orientadora de Convivência Integral</p>
