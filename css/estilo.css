@@ -247,7 +247,7 @@ footer div{
 }
 
 .creditos {
-    padding: 6%;
+  
     font-size: 0.875rem;
     text-align: center;
 }
@@ -505,11 +505,12 @@ footer div{
 
 /*slider*/
 
-
-.barra-imagem {
+/*
+ .barra-imagem {
     width: 100vw;
     height: auto;
 }
+
 
 .imagensslides {
     margin: 0;
@@ -620,8 +621,77 @@ footer div{
 
 #radio7:checked~.auto-navegacao .auto-btn7 {
     background-color: var(--cor-submenu);
+} */
+
+/* Teste Slider  */
+
+.slider{
+    /* margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden; */
+     
+    height: 300px; 
+    width: 1500px; 
+    margin: 0 auto; 
+    margin-top: 20px; 
+    margin-bottom: 400px;
+    
+    padding: 30px;
+    padding-left: 0px;
 }
 
+.slides{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.slides input{
+    display:none;
+}
+
+.slide{
+    width:100%;
+    position: relative;
+}
+
+.slide img{
+    width: 1910px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--cor-barramenu);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: var(--cor-barramenu);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+/* Fim Teste Slider */
 .divisões {
     display: flex;
     padding: 20px;
@@ -1068,7 +1138,7 @@ a{
 }
 
 
- .slider { 
+ /* .slider { 
  display: block; 
  height: 300px; 
  width: 1500px; 
@@ -1145,7 +1215,7 @@ left: 190px;
  visibility: visible; 
  z-index: 10; 
  } 
- 
+  */
  /*telas horarios*/
  
  .submenu {
@@ -1379,6 +1449,32 @@ section.cursos .flex{
     font-size: 25px;
     color: #000;
 }
+.area-aluno-box {
+    color: #2e2e2e;
+    padding: 40px;
+    border: 2px solid #345091;
+    border-radius: 15px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.area-aluno-box:hover {
+    box-shadow: 0px 0px 20px #171f32b6;
+    transform: scale(1.05);
+}
+.area-aluno-box h3 {
+    font-size: 28px;
+    color: #000;
+    margin: 15px 0px;
+}
+.area-aluno-box p {
+    text-align: justify;
+}
+.area-aluno-box img {
+    display: block;
+    margin: 0 auto;
+    max-height: 200px;
+}
+/* fim da Área do Aluno */
 
 /*Quem somos*/
 
@@ -1392,7 +1488,7 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    text-align:justify;
+    text-align:center;
     word-spacing: 1px;
 }
 
@@ -1401,7 +1497,7 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align:center; 
     word-spacing: 1px;
 }
 
@@ -1410,7 +1506,7 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align:center;
     margin-top: -15px;
 }
 
@@ -1419,7 +1515,8 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align:center;
+
 }
 
 .flex5{
@@ -1427,7 +1524,8 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align:center; 
+    margin-top: 25px;
 }
 
 .flex6{
@@ -1435,7 +1533,8 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align:center; 
+
 }
 
 .flex7{
@@ -1443,20 +1542,31 @@ section.cursos .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align:center; 
     margin-top: -15px;
 }
 
 .quem-somos-box{
     color: #2e2e2e;
-    padding: 25px;
+    padding: 40px;
     border: 2px solid #345091;
     border-radius: 15px;
     margin-top: 45px;
     transition: .2s;
-    flex: 0 0 calc(53.531% - 50px); 
+    flex: 0 0 calc(50% - 50px); 
+    margin-bottom: 20px;
+}
+.atgv7sda{
+    color: #2e2e2e;
+    padding: 20px;
+    border: 2px solid #345091;
+    border-radius: 15px;
+    margin-top: 45px;
+    transition: .2s;
     margin-bottom: 20px;
     text-align: justify;
+    flex: 0 0 calc(50% - 50px);  
+    margin-top: 150px;
 }
 
 .quem-somos .quem-somos:hover{
@@ -1499,8 +1609,31 @@ section.cursos .flex{
 }
 
 .imagemdiretora{
-    margin-left: 88px;
+    margin-left: 1px;
 }
+.imagemdiretorasecretaria{
+    margin-left: 8px;
+}
+.imagemdiretorapedagogico{
+    margin-left: 8px;
+}
+.imagemdiretoraorientacao{
+   margin-right: 1px;
+}
+.imagemdiretoratecno{
+    margin-left: 3px;
+}
+
+.quadro-quemsomos{
+    color: var(--cor-barramenu);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 70%;
+    margin-left: 285px;
+}
+
+/* Fim do quem somos */
 
 .tabela-dev {
     border-collapse: collapse;
