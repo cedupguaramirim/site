@@ -3,7 +3,7 @@
 /*
 Telas pequenas: até 600px
 Celular: de 600px a 768px
-Tablet: de 768px a 1200px
+Tablet: de 769px a 1200px
 Telas grandes: acima de 1200px
 */
 
@@ -26,9 +26,43 @@ Telas grandes: acima de 1200px
 
 }
 
-
-
 @media screen and (max-width: 767px){
+    .imagem_funcionario{
+        display: inline-block; /* Garante que a imagem seja tratada como bloco em linha */
+    vertical-align: middle; /* Alinha verticalmente a imagem */
+    }
+
+
+    .interface_index {
+        flex-direction: column;
+        margin-left:35px;
+    }
+   
+    .map-responsive iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .menu_sobre{
+        color: var(--cor-barramenu);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 30px; 
+    }
+    .submenu {
+        font-size: medium;
+        font-weight: bold;
+        padding: 1%;
+     }
+
+     .img__historia{
+        
+        width: 240px;
+        display: block; /* Alterando para display block para remover influências do float */
+        margin-left: auto; /* Define a margem esquerda como automática */
+        margin-right: auto; /* Define a margem direita como automática */
+    }
     .slider {
         display:none;
     }
@@ -43,20 +77,7 @@ Telas grandes: acima de 1200px
     .quadro{
         padding-bottom: 5px;
     }
-    
-    
-    span#burguer {
-        display:none;
-    }
-    menu{
-        display: block;
-    }
-    menu > ul > li{
-        display: inline block;
-    }
-    main{
-        width: 768px;
-    }
+
 
  
 /*Estilo menu mobile*/
@@ -166,7 +187,23 @@ Telas grandes: acima de 1200px
    margin-left: 50px;
 }
 
-
+.flex1{
+   flex-wrap: nowrap;
+   flex-direction: column;
+   justify-content:center;
+   flex: 0 0 calc(50% - 50px); 
+   margin-bottom: 20px;
+}
+.quem-somos-box{
+    border-radius: 25px;
+    transition: .2s;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: justify;
+    align-items: center;
+    width: 350px;
+}
+}
 @media screen and (max-width: 600px) {
     section.cursos {
         padding: 5% 2%; 
@@ -263,301 +300,3 @@ Telas grandes: acima de 1200px
 
 /*Fim menu mobile*/
 }
-
-/* Começo Quem Somos */
-
-@media screen and (min-width: 375px) and (max-width: 667px){
-        .quem-somos-titulo{
-            font-size: 30px;
-        
-        }
-        .imagemdiretora{
-            max-height: 150px;
-            max-width: 150px;
-            margin-right: 77px;
-        }
-
-        .quem-somos-box{
-            
-          
-            padding-left: -75px;
-            border-radius: 25px;
-            margin-top: 45px;
-            transition: .2s;
-            flex: 15px; 
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-    
-}
-
-@media screen and (min-width: 360px) and (max-width: 800px){
-    .quem-somos-titulo{
-        font-size: 25px;
-    }
-
-    .submenu{
-        margin-right: 447px;
-        font-size: 18px;
-        height: 72px;
-        text-align: center;
-    }
-
-    .quem-somos-box{
-        color: #2e2e2e;
-        padding: 20px;
-        border: 2px solid #345091;
-        border-radius: 15px;
-        margin-top: 45px;
-        transition: .2s;
-        flex: 0 0 calc(25.254% - 45px); 
-        margin-bottom: 20px;
-    }
-
-    .flex5{
-        margin-left: 20px;
-    }
-
-    .flex6{
-        margin-left: 28px;
-    }
-
-    .flex7{
-        margin-left: 40px;
-    }
-    
-
-}
-
-@media screen and (min-width: 393px) and (max-width: 851px){
-    .quem-somos-titulo{
-        font-size: 25px;
-    }
-
-    .flex2{
-        margin-left: 4px;
-    }
-
-    .flex5{
-        margin-left: 35px;
-    }
-
-    .flex6{
-        margin-left: 45px;
-    }
-
-    .flex7{
-        margin-right: 15px;
-    }
-
-    .imagemdiretora{
-        margin-left: 80px;
-    }
-
-    .imagemdiretoraorientacao{
-        margin-left: 15px;
-    }
-
-
-}
-
-@media screen and (min-width: 412px) and (max-width: 915px){
-
-    .flex5{
-        margin-left: 39px;
-    }
-
-    .flex6{
-        margin-left: 52px;
-    }
-
-    .flex7{
-        margin-left: 54px;
-    }
-
-}
-
-@media screen and (min-width: 320px) and (max-width: 568px){
-
-    .quem-somos-titulo{
-        font-size: 23px;
-        align-items: center;
-    }
-
-    .submenu{
-        margin-right: 447px;
-        font-size: 18px;
-        height: 72px;
-        text-align: center;
-    }
-
-    .quem-somos-box{
-        color: #2e2e2e;
-        padding: 8px;
-        border: 2px solid #345091;
-        border-radius: 15px;
-        margin-top: 45px;
-        transition: .2s;
-        flex: 0 0 calc(25.254% - 45px); 
-        margin-bottom: 20px;
-    }
-
-    .imagemdiretora{
-        height: 125px;
-        width: 148px;
-    }
-
-    .imagemdiretorasecretaria{
-        height: 125px;
-        width: 148px;
-    }
-
-    .imagemdiretorapedagogico{
-        height: 125px;
-        width: 148px;
-    }
-
-    .imagemdiretoraorientacao{
-        height: 125px;
-        width: 148px;
-    }
-
-    .imagemdiretoratecno{
-        height: 125px;
-        width: 148px;
-    }
-
-    .flex5{
-        margin-left: 15px;
-    }
-
-    .flex6{
-        margin-left: 63px;
-    }
-    .flex7{
-        margin-left: 63px;
-    }
-
-}
-
-@media screen and (min-width: 375px) and (max-width: 812px){
-
-    .quem-somos-titulo{
-        font-size: 23px;
-        align-items: center;
-    }
-
-    .imagemdiretora{
-        height: 125px;
-        width: 148px;
-        margin-left: 75px;
-    }
-
-    .imagemdiretorasecretaria{
-        height: 125px;
-        width: 148px;
-        margin-left: 34px;
-    }
-
-    .imagemdiretorapedagogico{
-        height: 125px;
-        width: 148px;
-    }
-
-    .imagemdiretoraorientacao{
-        height: 125px;
-        width: 148px;
-        margin-left: 34px;
-    }
-
-    .imagemdiretoratecno{
-        height: 125px;
-        width: 148px;
-    }
-    
-    .flex2{
-        margin-left: 25px;
-    }
-
-    .flex5{
-        margin-left: 38px;
-    }
-
-    .flex6{
-        margin-left: 88px;
-    }
-    .flex7{
-        margin-left: 88px;
-    }
-
-    .submenu{
-        margin-right: 447px;
-        font-size: 18px;
-        height: 72px;
-        text-align: center;
-    }
-
-}
-
-@media screen and (min-width: 414px) and (max-width: 896px){
-    .flex5{
-        margin-left: 60px;
-    }
-
-    .flex6{
-        margin-left:106px;
-    }
-
-    .quem-somos-titulo{
-        font-size: 25px;
-    }
-}
-
-@media screen and (min-width: 360px) and (max-width: 780px){
-    .flex2{
-        margin-left: 25px;
-    }
-
-    .flex5{
-        margin-left: 45px;
-    }
-
-    .flex6{
-        margin-left: 84px;
-    }
-
-    .flex7{
-        margin-left: 84px;
-    }
-}
-
-@media screen and (min-width: 428px) and (max-width: 926px){
-    .flex2{
-        margin-left: 40px;
-    }
-
-    .flex5{
-        margin-left: 65px;
-    }
-
-    .flex6{
-        margin-left: 104px;
-    }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 800px){
-    .quadro-quemsomos{
-      margin-right: 156px;
-    }
-}
-
-
-
-/* começo area do aluno */
-
-
-
-
-
-
-/* fim area do aluno */

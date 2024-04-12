@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CEDUP GUARAMIRIM - Desenvolvimento de Sistemas - Curso Técnico </title>
-    <link rel="icon" type="image/x-icon" href="../../imagens/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="../imagens/favicon-32x32.png">
     <meta name="keywords" content="CEDUP, cursos,matrícula, escola, técnico, Guaramirim">
-    <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
+
 </head>
 
 <header>
@@ -58,6 +60,102 @@
 </header>
 
 <body class="site">
+
+    <div id="container">
+        <div class="tab-buttons">
+            <button class="tab-btn.active" content-id="home">
+                Home
+            </button>
+
+            <button class="tab-btn" content-id="services">
+                Services
+            </button>
+
+            <button class="tab-btn" content-id="contacts">
+                Contacts
+            </button>
+
+            <button class="tab-btn" content-id="location">
+                Location
+            </button>
+
+            <button class="tab-btn" content-id="about">
+                About
+            </button>
+        </div>
+
+        <div class="tab-contents">
+            <div class="content_des" id="home">
+                <img src="src/images/home.svg" class="content-img" alt="home image">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Home
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="content_des" id="services">
+                <img src="src/images/services.svg" class="content_des-img" alt="services image">
+
+                <div class="infos">
+                    <h1 class="content_des-title">
+                        Services
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="content_des" id="contacts">
+
+                <div class="infos">
+                    <h1 class="content-title">
+                        Contacts
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="content_des" id="location">
+
+                <div class="infos">
+                    <h1 class="content_des-title">
+                        Location
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="content_des" id="about">
+
+                <div class="infos">
+                    <h1 class="content_des-title">
+                        About
+                    </h1>
+
+                    <p class="content-description">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, repellat! Id ab similique velit, molestiae, aliquam illum officiis sit totam rem voluptas magnam, atque dicta magni perferendis recusandae reiciendis necessitatibus! 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <div class="site-content">
         <div class="títulos">
@@ -143,7 +241,30 @@
             </div>
         </ul>
     </footer>
-        <script src="script.js"></script>
     </body>
     
     </html>
+
+    <script>
+    
+    const tabs = document.querySelectorAll('.tab-btn');
+
+tabs.forEach(tab => tab.addEventListener('click', () => tabClicked(tab)));
+
+const tabClicked = (tab) => {
+    tabs.forEach(tab => tab.classList.remove('active'));
+    tab.classList.add('active');
+
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => content.classList.remove('show'));
+
+    const contentId = tab.getAttribute('content-id');
+    const content = document.getElementById(contentId);
+
+    content.classList.add('show');
+}
+
+const currentActiveTab = document.querySelector('.tab-btn.active');
+tabClicked(currentActiveTab);
+        
+    </script>
