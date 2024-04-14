@@ -27,10 +27,14 @@ Telas grandes: acima de 1200px
 }
 
 @media screen and (max-width: 767px){
+   
+    .capamobile{
+        display: block;
+    }
+   
     .imagem_funcionario{
         display: inline-block; /* Garante que a imagem seja tratada como bloco em linha */
-    vertical-align: middle; /* Alinha verticalmente a imagem */
-    
+        vertical-align: middle; /* Alinha verticalmente a imagem */
     }
 
     .devs-footer{

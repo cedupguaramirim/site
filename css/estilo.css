@@ -531,14 +531,15 @@ footer div{
 
 }
   /* Outras páginas*/
-
+  .capamobile{
+    display: none;
+}
 /*slider*/
 
 /* Teste Slider  */
 
 .slider{
     margin: 0 auto;
-    
     margin-bottom: -230px;
     width: 1600px;
     height: 800px;
