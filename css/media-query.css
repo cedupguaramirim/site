@@ -50,9 +50,7 @@ Telas grandes: acima de 1200px
     }
     .interface {
         flex-direction: column;
-       align-content: center;
-        margin-top: 35px;
-        font-size:10;
+        margin-left: 0px;
     }
    
     .map-responsive iframe {
