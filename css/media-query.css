@@ -38,7 +38,7 @@ Telas grandes: acima de 1200px
     }
     .interface_index {
         flex-direction: column;
-        margin-left: 5px;
+        margin-left: 0px;
     }
    
     .map-responsive iframe {
