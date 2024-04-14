@@ -30,6 +30,7 @@ Telas grandes: acima de 1200px
    
     .capamobile{
         display: block;
+        width: 100%;
     }
    
     .imagem_funcionario{
