@@ -48,6 +48,12 @@ Telas grandes: acima de 1200px
         flex-direction: column;
         margin-left: 0px;
     }
+    .interface {
+        flex-direction: column;
+       align-content: center;
+        margin-top: 35px;
+        font-size:10;
+    }
    
     .map-responsive iframe {
         width: 100%;
@@ -191,8 +197,9 @@ Telas grandes: acima de 1200px
     display: none;
    }
    
-   .cursos-box{
-   margin-left: 50px;
+.cursos-box{
+   margin-left: 0px;
+   width: 350px;
 }
 
 .flex1{

@@ -1273,36 +1273,31 @@ background: #ffffff;
 
 /*curso*/
 .cursos{
-    padding: 110px 4%;
-}
-section.cursos .flex{
-    gap: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-self: center;
 }
 
-.cursos .cursos-box{
+.cursos-box{
     color: #2e2e2e;
     padding: 40px;
     border: 2px solid #345091;
     border-radius: 15px;
     margin-top: 45px;
     transition: .2s;
+    flex: 0 0 calc(50% - 50px); 
 }
-.cursos .cursos-box:hover{
+.cursos-box:hover{
     box-shadow: 0px 0px 20px #171f32b6;
     transform: scale(1.05);
 }
-.cursos .cursos-box h3{
+.cursos-box h3{
     font-size: 28px;
     color: #000;
     margin: 15px 0px;
 }
-.cursos .cursos-box p{
+.cursos-box p{
     text-align: justify;
 }
-.cursos .cursos-box{
+.cursos-box{
     flex: 0 0 calc(50% - 50px); 
     margin-bottom: 20px;
 }
@@ -1312,11 +1307,11 @@ section.cursos .flex{
     font-size: 50px;
     color: #000;
 }
-.cursos .cursos-subtitulo {
+.cursos-subtitulo {
     font-size: 14px;
     text-align: center;
 }
-.cursos .cursos-box img {
+.cursos-box img {
     display: block;
     margin: 0 auto;
     max-height: 200px;
