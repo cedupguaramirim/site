@@ -36,8 +36,9 @@ Telas grandes: acima de 1200px
     }
    
     .imagem_funcionario{
-        display: inline-block; /* Garante que a imagem seja tratada como bloco em linha */
-        vertical-align: middle; /* Alinha verticalmente a imagem */
+        display: inline-block; 
+        vertical-align: middle; 
+        align-items: center;
     }
 
     .devs-footer{
@@ -214,6 +215,7 @@ Telas grandes: acima de 1200px
 }
 .quem-somos-descricao{
     text-align: justify;
+    word-spacing: 1px;
 }
 }
 @media screen and (max-width: 600px) {

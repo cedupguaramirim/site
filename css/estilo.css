@@ -1374,7 +1374,6 @@ section.cursos .flex{
     flex-wrap: wrap;
     justify-content:center;
     text-align:center;
-    word-spacing: 1px;
     width: 900px;
 }
 
