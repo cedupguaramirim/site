@@ -28,9 +28,10 @@ Telas grandes: acima de 1200px
 
 @media screen and (max-width: 767px){
    
-    .capamobile{
+    .capamobile {
         display: block;
         width: 100%;
+        height: auto; /* Para manter a proporção da imagem */
     }
    
     .imagem_funcionario{
