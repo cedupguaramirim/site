@@ -209,9 +209,11 @@ Telas grandes: acima de 1200px
     transition: .2s;
     flex-direction: column;
     margin-bottom: 20px;
-    text-align: justify;
     align-items: center;
     width: 350px;
+}
+.quem-somos-descricao{
+    text-align: justify;
 }
 }
 @media screen and (max-width: 600px) {

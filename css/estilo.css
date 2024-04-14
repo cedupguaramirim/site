@@ -1368,7 +1368,6 @@ section.cursos .flex{
     padding: 110px 4%;
   
 }
-
 .flex1{
     gap: 30px;
     display: flex;
@@ -1376,60 +1375,7 @@ section.cursos .flex{
     justify-content:center;
     text-align:center;
     word-spacing: 1px;
-}
-
-.flex2{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align:center; 
-    word-spacing: 1px;
-}
-
-.flex3{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align:center;
-    margin-top: -15px;
-}
-
-.flex4{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align:center;
-
-}
-
-.flex5{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align:center; 
-    margin-top: 25px;
-}
-
-.flex6{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align:center; 
-
-}
-
-.flex7{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align:center; 
-    margin-top: -15px;
+    width: 900px;
 }
 
 .quem-somos-box{
