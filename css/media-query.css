@@ -27,7 +27,10 @@ Telas grandes: acima de 1200px
 }
 
 @media screen and (max-width: 767px){
-   
+    body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+        overflow-y: auto; /* Permite a rolagem vertical quando necessário */
+    }
     .capamobile {
         display: block;
         width: 100%;
