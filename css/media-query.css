@@ -30,12 +30,13 @@ Telas grandes: acima de 1200px
     .imagem_funcionario{
         display: inline-block; /* Garante que a imagem seja tratada como bloco em linha */
     vertical-align: middle; /* Alinha verticalmente a imagem */
+    
     }
 
 
     .interface_index {
         flex-direction: column;
-        margin-left:35px;
+        margin-left:25px;
     }
    
     .map-responsive iframe {
