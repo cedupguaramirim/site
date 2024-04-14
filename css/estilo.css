@@ -1272,7 +1272,7 @@ background: #ffffff;
 /*final teste*/
 
 /*curso*/
-section.cursos{
+.cursos{
     padding: 110px 4%;
 }
 section.cursos .flex{
