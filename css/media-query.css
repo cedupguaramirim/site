@@ -33,10 +33,12 @@ Telas grandes: acima de 1200px
     
     }
 
-
+    .devs-footer{
+        display: block;
+    }
     .interface_index {
         flex-direction: column;
-        margin-left: 10px;
+        margin-left: 5px;
     }
    
     .map-responsive iframe {
@@ -162,7 +164,7 @@ Telas grandes: acima de 1200px
     /*Fim menu mobile*/
 
     /*footer mobile*/
-
+    
     footer div{
         padding-right: 0px;
     }
@@ -176,7 +178,7 @@ Telas grandes: acima de 1200px
    }
    .footer-mobile{
     text-align:center;
-    
+    text-decoration: none;
     padding: 0%;
    }
 
