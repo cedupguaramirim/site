@@ -16,7 +16,6 @@ Telas grandes: acima de 1200px
         margin-bottom: 300px;
         position: relative;
         padding-left: 0px;
-        margin-bottom: 200px;
     }
 
     header nav.menu-desktop ul li{
@@ -31,6 +30,7 @@ Telas grandes: acima de 1200px
         overflow-x: hidden; /* Impede a rolagem horizontal */
         overflow-y: auto; /* Permite a rolagem vertical quando necessário */
     }
+   
     .capamobile {
         display: block;
         width: 100%;
@@ -177,6 +177,7 @@ Telas grandes: acima de 1200px
 
     /*footer mobile*/
     
+
     footer div{
         padding-right: 0px;
     }
@@ -222,9 +223,8 @@ Telas grandes: acima de 1200px
     text-align: justify;
     word-spacing: 1px;
 }
-main #quero-trabalhar{
-    margin-bottom: 10px;
-    
+.quero-trabalhar{
+    margin-bottom: 500px;
 }
 }
 

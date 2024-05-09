@@ -271,8 +271,7 @@ footer{
     text-align:center;
     line-height:20px;
     display: block;
-   
-   
+    margin-top: 100px;
 }
 
 footer div{
@@ -283,8 +282,7 @@ footer div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    justify-content: center;
-  
+    justify-content: center; 
 }
 
 .creditos {
@@ -1529,3 +1527,8 @@ background: #ffffff;
   .devs-footer{
     display: none;
   }
+  main #quero-trabalhar{
+   
+
+
+}
