@@ -224,7 +224,9 @@ Telas grandes: acima de 1200px
     word-spacing: 1px;
 }
 .quero-trabalhar{
+    margin-top: 10px;
     margin-bottom: 500px;
+    padding-left: 0;
 }
 }
 

@@ -148,7 +148,7 @@ ul.menu {
 
 /*Fim Cabecalho*/
 
-main{
+main {
     width: 90vw;
     margin: auto;
     padding: 10px;
@@ -1527,8 +1527,16 @@ background: #ffffff;
   .devs-footer{
     display: none;
   }
-  main #quero-trabalhar{
-   
+  .quero-trabalhar-h1{
+    text-align: center;
+  }
+  .quero-trabalhar .títulos p {
+    margin-left: auto; /* Move the left margin to the right */
+    margin-right: auto; /* Move the right margin to the left */
+    text-align: center; /* Center the text within the paragraph */
 
+}
+.quero-trabalhar{
+    margin-bottom: 50px;
 
 }
