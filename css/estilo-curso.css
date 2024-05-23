@@ -29,7 +29,8 @@ body {
 }
 
 p {
-    text-align: center;
+    text-indent: 0;
+    text-align: justify;
     color: var(--cor-barramenu);
 }
 
@@ -175,7 +176,7 @@ h2 {
 }
 
 .grade-curricular p {
-    text-align: center;
+    text-align: justify;
 }
 
 .abas-grade-curricular {

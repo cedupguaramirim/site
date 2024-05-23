@@ -244,8 +244,14 @@ Telas grandes: acima de 1200px
     margin-right: 0;
     gap: 5px;
     align-items: flex-start;
+    width: 350px;
 }
 
-
+p {
+    text-align: justify;
+}
+.detalhes-modulo{
+    width: 350px;
+}
 }
 
