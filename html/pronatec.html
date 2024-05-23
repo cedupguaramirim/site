@@ -324,47 +324,6 @@
 
     
     </article>
-    <script>
-        // alternar entre as abas dos módulos da grade curricular
-        const abasModulos = document.querySelectorAll('.aba-grade-curricular');
-        const conteudosModulos = document.querySelectorAll('.conteudo-aba-grade-curricular');
-
-        abasModulos.forEach((aba) => {
-            aba.addEventListener('click', () => {
-                const tab = aba.dataset.tab;
-                abasModulos.forEach((aba) => {
-                    aba.classList.remove('active');
-                });
-                conteudosModulos.forEach((conteudo) => {
-                    conteudo.classList.remove('active');
-                });
-                document.querySelector(`#${tab}`).classList.add('active');
-                aba.classList.add('active');
-            });
-        });
-    </script>
-
-    <script>
-        // alternar entre as abas dos mudulossss
-        const abas = document.querySelectorAll('.aba-curso');
-        const conteudosAbas = document.querySelectorAll('.conteudo-aba-curso');
-
-        abas.forEach((aba) => {
-            aba.addEventListener('click', () => {
-                const tab = aba.dataset.tab;
-                abas.forEach((aba) => {
-                    aba.classList.remove('active');
-                });
-                conteudosAbas.forEach((conteudo) => {
-                    conteudo.classList.remove('active');
-                });
-                document.querySelector(`#${tab}`).classList.add('active');
-                aba.classList.add('active');
-            });
-        });
-    </script>
-
-
     <footer>
         <section class="footer__section">
             <div>
@@ -418,7 +377,43 @@
 
 
     </footer>
+    <script>
+        // alternar entre as abas dos módulos da grade curricular
+        const abasModulos = document.querySelectorAll('.aba-grade-curricular');
+        const conteudosModulos = document.querySelectorAll('.conteudo-aba-grade-curricular');
 
+        abasModulos.forEach((aba) => {
+            aba.addEventListener('click', () => {
+                const tab = aba.dataset.tab;
+                abasModulos.forEach((aba) => {
+                    aba.classList.remove('active');
+                });
+                conteudosModulos.forEach((conteudo) => {
+                    conteudo.classList.remove('active');
+                });
+                document.querySelector(`#${tab}`).classList.add('active');
+                aba.classList.add('active');
+            });
+        });
+   
+        // alternar entre as abas dos mudulossss
+        const abas = document.querySelectorAll('.aba-curso');
+        const conteudosAbas = document.querySelectorAll('.conteudo-aba-curso');
+
+        abas.forEach((aba) => {
+            aba.addEventListener('click', () => {
+                const tab = aba.dataset.tab;
+                abas.forEach((aba) => {
+                    aba.classList.remove('active');
+                });
+                conteudosAbas.forEach((conteudo) => {
+                    conteudo.classList.remove('active');
+                });
+                document.querySelector(`#${tab}`).classList.add('active');
+                aba.classList.add('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
