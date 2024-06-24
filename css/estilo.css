@@ -1654,7 +1654,16 @@ background: #ffffff;
     text-decoration: none;
     font-family: var(--fonte-primaria);
 }
-
+.download1 {
+    font-size: 15px;
+    background-color: var(--cor-barramenu);
+    color: var(--cor-fontefooter);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+}
 .content__pronatec {
     font-size: 1em;
     font-family: var(--fonte-primaria);
